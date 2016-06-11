@@ -1,10 +1,13 @@
 //initialized global variables
-var news = ['Barack Obama', 'Donald Trump', 'Hillary Clinton', 'Bernie Sanders'];
+var news = ['Barack Obama', 'Donald Trump', 'Hillary Clinton', 'Bernie Sanders', 'Ted Cruz'];
 
 // wrapped jquery in document ready function
 $(document).on('ready', function(){
 
 	$(document).on('click', '.news', function(){
+
+		$("#image-area").empty();
+		$("#intro-image").addClass('hide');
 
 		//takes data-name from button and stores it in a variable
     var rate = $(this).data('name'); 
@@ -68,11 +71,17 @@ $(document).on('ready', function(){
 		//grabs the value from the input textfield
 		var newsVal = $('#new-news').val().trim();
 
-		//input value is added to the array
-		news.push(newsVal);
-		
-		//calls function to display buttons based on news array
-		showButtons();
+		//check if text field is empty
+		if(newsVal != ''){
+			//input value is added to the array
+			news.push(newsVal);
+			
+			//reset text field to placeholder
+			$('#new-news').val('');
+
+			//calls function to display buttons based on news array
+			showButtons();	
+		}
 
 		// We have this line so that users can hit "enter" instead of clicking on the button and it won't move to the next page
 		return false;

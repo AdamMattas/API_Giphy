@@ -43,51 +43,18 @@ h3 {
     font-weight: bold;
 }
 /*end global styling*/
-.patriot{
-	text-align: center;
-	color: #FFFFFF;
-	margin-top: 0px;
+
+/*universal class for hiding an element*/
+.hide{
+	display: none;
 }
 
-.text-field{
-	width: 100%;
-	background-color: #FFFFFF;
-	border: 1px solid #090075;
-	border-radius: 5px;
-	padding: 10PX;
-}
-
-.submit{
-	text-align: center;
-	width: 100%;
-	color: #FFFFFF;
-	background-color: #090075;
-	border: 1px solid #FFFFFF;
-	border-radius: 5px;
-	padding: 10px 0px 10px 0px;
-	margin-top: 10px;
-	cursor: pointer;
-}
-
-.news{
-	text-align: center;
-	width: 100%;
-	background-color: #FFFFFF;
-	border: 1px solid #FFFFFF;
-	border-radius: 5px;
-	padding: 10px 25px 10px 25px;
-	margin-top: 25px;
-	cursor: pointer;
-}
-
-.news-image{
-
-}
-
+/*wrapper for entire page*/
 .page-wrapper{
 	height: 100%;
 }
 
+/*begin header styling*/
 .header{
 	margin-bottom: 25px;
 }
@@ -131,7 +98,9 @@ h3 {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+/*end header styling*/
 
+/*wrapper for content below the header*/
 .content-wrapper{
 	position: relative;
 	width: 90%;
@@ -139,16 +108,65 @@ h3 {
 	margin: 0 auto;
 }
 
+/*begin styling for side panel*/
 .side-wrapper{
 	width: 300px;
-	/*height: 100%;*/
 	border: 1px solid #fc0202;
 	border-radius: 5px;
 	background-color: #fc0202;
-	padding: 25px;
+	padding: 30px;
 	position: absolute;
+	z-index: 100;
 }
 
+.patriot{
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 0px;
+}
+
+.text-field{
+	width: 100%;
+	background-color: #FFFFFF;
+	border: 1px solid #090075;
+	border-radius: 5px;
+	padding: 10PX;
+}
+
+.submit{
+	text-align: center;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: #090075;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	padding: 10px 0px 10px 0px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.news{
+	text-align: center;
+	width: 100%;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	padding: 10px 25px 10px 25px;
+	margin-top: 25px;
+	cursor: pointer;
+}
+/*end styling for side panel*/
+
+/*intro animated gif*/
+.intro{
+	position: absolute;
+	border: 1px solid #000000;
+	width: 70%;
+	right: 0;
+	max-height: 500px;
+}
+
+/*begin styling for images and image area*/
 .item{
 	position: relative;
 	margin-right: 50px;
@@ -169,7 +187,9 @@ h3 {
 	float: right;
 	min-height: 427px;
 }
+/*end styling for images and image area*/
 
+/*footer with image*/
 .footer{
 	clear: both;
 	position: relative;
