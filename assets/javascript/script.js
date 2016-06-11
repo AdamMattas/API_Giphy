@@ -1,5 +1,5 @@
 //initialized global variables
-var news = ['barack obama', 'donald trump', 'hillary clinton', 'bernie sanders', 'nsa'];
+var news = ['Barack Obama', 'Donald Trump', 'Hillary Clinton', 'Bernie Sanders'];
 
 // wrapped jquery in document ready function
 $(document).on('ready', function(){
@@ -52,7 +52,7 @@ $(document).on('ready', function(){
 		for (var i = 0; i < news.length; i++){
 
 			//dynamicaly generates buttons for each news theme in the array
-	    var a = $('<button>') //created a new button element
+	    var a = $('<div>') //created a new button element
 	    a.addClass('news'); //added a class 
 	    a.attr('data-name', news[i]); //added a data-attribute
 	    a.text(news[i]); //added the button's text

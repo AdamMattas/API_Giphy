@@ -21,23 +21,43 @@
 
 		<!-- begin header section -->
 		<div class="header">
+			<div class="header1"></div>
+			<div class="header2"></div>
+			<div class="header3"></div>
 			<div class="head-wrapper">
-				<div class="title"></div>	
+				<div class="emblem-left"></div>
+				<h1 class="title">FATE OF THE UNION</h1>	
 			</div>
 		</div>
 		<!-- end header section -->
 
-		<!-- div for existing and dynamic buttons -->
-		<div id="button-area"></div>
+		<div class="content-wrapper">
 
-		<!-- add new button from text field -->
-		<input id="new-news" type="text">
-		<button id="add-news">Submit</button>
+			<div class="side-wrapper">
 
-		<!-- div container for images and ratings -->
-		<div id="image-area">
-			<div id="rating"></div>
+				<h2 class="patriot">Choose Your Patriot</h2>
+
+				<!-- form to add new button from text field -->
+				<form id="news-form">
+			    <input type="text" id="new-news" class="text-field" placeholder="Add New Patriot"><br>
+			    
+			    <!-- Button triggers new news button to be added -->
+			    <input id="add-news" class="submit" type="submit" value="Submit">
+		  	</form>
+
+				<!-- div for existing and dynamic buttons -->
+				<div id="button-area"></div>
+
+			</div>
+
+			<!-- div container for images and ratings -->
+			<div id="image-area">
+				<div id="rating"></div>
+			</div>
+
 		</div>
+
+		<div class="footer"></div>
 		
 	</div>
 	<!-- end wrapper for entire page -->
