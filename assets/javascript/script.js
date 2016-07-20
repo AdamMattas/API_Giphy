@@ -39,6 +39,7 @@ $(document).on('ready', function(){
              gifDiv.append(newsImage)//appends the image to the div
 
              $('#image-area').prepend(gifDiv);//prepends entire image div to image-area div
+             $(".footer").addClass('foot-switch');
 
          }
         
